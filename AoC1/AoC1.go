@@ -75,7 +75,7 @@ func Sol2(elves []Elf) int {
 	top3Cal[2] = CalSum(elves[2])
 	sort.Ints(top3Cal[:])
 
-	for i := 3; i < len(elves)-1; i++ {
+	for i := 3; i < len(elves); i++ {
 		calSum := CalSum(elves[i])
 		if calSum < top3Cal[0] {
 			continue
