@@ -39,10 +39,10 @@ func ReadInput(inputFilename string) []string {
 	result := make([]string, 0)
 
 	file, err := os.Open(inputFilename)
-	defer file.Close()
 	if err != nil {
 		return result
 	}
+	defer file.Close()
 
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
