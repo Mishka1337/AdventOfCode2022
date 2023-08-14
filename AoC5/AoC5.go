@@ -22,7 +22,7 @@ type Command struct {
 }
 
 func main() {
-	lines := ReadInput("./test.txt")
+	lines := ReadInput("./input.txt")
 	state1, coms1 := ParseInput(lines)
 	state2, coms2 := ParseInput(lines)
 	fmt.Println(Sol1(state1, coms1))
